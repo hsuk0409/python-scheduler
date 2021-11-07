@@ -1,5 +1,4 @@
 import schedule
-import time
 
 def job():
     print("schedule test!!")
