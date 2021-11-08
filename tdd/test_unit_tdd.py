@@ -1,7 +1,7 @@
-from was_run import WanRun
+from was_run import WasRun
 
 
-test = WanRun("justinMethod")
+test = WasRun("justinMethod")
 print (test.wasRun)
 test.run()
 print (test.wasRun)
