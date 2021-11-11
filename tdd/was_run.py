@@ -11,4 +11,5 @@ class WasRun(TestCase):
         self.wasRun = 1
 
     def setUp(self) -> None:
+        self.wasRun = None
         self.wasSetUp = 1
