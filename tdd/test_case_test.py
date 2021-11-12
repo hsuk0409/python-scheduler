@@ -13,7 +13,13 @@ class TestCaseTest(TestCase):
 
     def testSetUp(self) -> None:
         self.test.run()
-        assert self.test.wasSetUp
+        print(self.test.log)
+        assert "setUp justinMethod tearDown " == self.test.log
+
+    def testTemplateMethod(self):
+        test = WasRun("justinMethod")
+        test.run()
+        assert "setUp justinMethod tearDown " == test.log
 
 
 TestCaseTest("testRunning").run()
